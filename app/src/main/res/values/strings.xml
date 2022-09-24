@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ToFix</string>
+    <string name="title_activity_location_screen">Map</string>
+</resources>

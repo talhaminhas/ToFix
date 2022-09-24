@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Speedometer"
+    android:background="@drawable/background2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.github.anastr.speedviewlib.SpeedView
+            android:id="@+id/speedView"
+            app:sv_unitTextSize="0dp"
+            app:sv_textColor="#F5F7F8"
+            app:sv_indicatorColor="#00BCD4"
+            app:sv_withTremble="false"
+            app:sv_maxSpeed="120"
+            app:sv_textSize="15dp"
+            app:sv_speedTextSize="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.github.capur16.digitspeedviewlib.DigitSpeedView
+            android:id="@+id/tv_speed"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            app:disableBackgroundImage="false"
+            app:showUnit="true"
+            app:speed="0"
+            android:background="@drawable/gradient1"
+            app:backgroundDrawable="@drawable/gradient1"
+            app:speedTextColor="@android:color/holo_red_dark"
+            app:speedTextSize="20dp"
+            app:unit="mph"
+            app:unitTextColor="@android:color/holo_blue_light"
+            app:unitTextSize="5dp" />
+
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/sw_matrics"
+            android:layout_marginTop="300dp"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:background="@drawable/gradient1"
+            android:text="MPH"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

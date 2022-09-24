@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".Info">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="650dp"
+            android:gravity="center"
+            android:background="@drawable/gradient2">
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="600dp"
+            android:textColor="#EFF5FA"
+            android:textSize="25sp"
+            android:gravity="center|left"
+            android:text="Tofix smart bicycle App is compatible with the smart bicycle model. This App helps the user to connect with his smart bicycle. The App is designed to assist the user in different ways.\n
+\nUser can retrieve the location of his smart bicycle.\n
+\nUser can use his smartphone as an speedometer.\n
+\nUser will be able to know battery life of his smart bicycle."
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
